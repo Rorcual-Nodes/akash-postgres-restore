@@ -1,4 +1,4 @@
-FROM postgres:alpin3.18
+FROM postgres:alpine3.18
 
 RUN apt-get update -qq && apt-get install -y curl zip netcat cron
 
