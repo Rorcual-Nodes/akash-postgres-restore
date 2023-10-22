@@ -1,6 +1,6 @@
 FROM postgres:16.0
 
-RUN apt-get update -qq && apt-get install -y curl zip netcat cron
+RUN apt-get update -qq && apt-get install -y curl zip netcat-openbsd cron
 
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 RUN unzip awscliv2.zip
