@@ -1,6 +1,6 @@
 FROM postgres:alpine3.18
 
-RUN apk update && apk add curl zip netcat cron
+RUN apk update && apk add curl zip netcat-openbsd apk-cron
 
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 RUN unzip awscliv2.zip
